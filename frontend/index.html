@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stryk's Insta Saver | Download Instagram Content</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Stryk's Insta Saver</h1>
+            <p>The most advanced Instagram downloader for photos, videos, reels, stories, and full profile archives</p>
+            <a href="#download" class="btn" style="background: white; color: var(--primary); padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 20px;">Start Downloading Now</a>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <div class="container">
+        <section id="download" class="download-section">
+            <div class="tab-container">
+                <div class="tab active" data-tab="single">Single Post</div>
+                <div class="tab" data-tab="profile">Full Profile</div>
+                <div class="tab" data-tab="story">Stories</div>
+                <div class="tab" data-tab="reel">Reels</div>
+            </div>
+
+            <div class="tab-content active" id="single-tab">
+                <h2>Download Instagram Posts</h2>
+                <p>Save any Instagram photo or video in high quality with one click. Works with single posts and carousels.</p>
+                <div class="input-group">
+                    <input type="text" id="post-url" placeholder="Paste Instagram post URL here...">
+                    <button id="download-post-btn"><i class="fas fa-download"></i> Download</button>
+                </div>
+                <div class="error-message" id="post-error"></div>
+                <div class="spinner" id="post-spinner"></div>
+                <div class="result-section" id="post-result"></div>
+            </div>
+
+            <div class="tab-content" id="profile-tab">
+                <h2>Download Full Instagram Profile</h2>
+                <p>Archive all photos, videos, stories, and highlights from any public Instagram profile.</p>
+                <div class="input-group">
+                    <input type="text" id="profile-username" placeholder="Enter Instagram username...">
+                    <button id="download-profile-btn"><i class="fas fa-user-circle"></i> Download Profile</button>
+                </div>
+                <div class="error-message" id="profile-error"></div>
+                <div class="spinner" id="profile-spinner"></div>
+                <div class="result-section" id="profile-result"></div>
+            </div>
+
+            <div class="tab-content" id="story-tab">
+                <h2>Download Instagram Stories</h2>
+                <p>View and save stories from any public Instagram account before they disappear.</p>
+                <div class="input-group">
+                    <input type="text" id="story-username" placeholder="Enter Instagram username...">
+                    <button id="download-story-btn"><i class="fas fa-history"></i> View Stories</button>
+                </div>
+                <div class="error-message" id="story-error"></div>
+                <div class="spinner" id="story-spinner"></div>
+                <div class="result-section" id="story-result"></div>
+            </div>
+
+            <div class="tab-content" id="reel-tab">
+                <h2>Download Instagram Reels</h2>
+                <p>Save Instagram reels in HD quality with original audio and no watermarks.</p>
+                <div class="input-group">
+                    <input type="text" id="reel-url" placeholder="Paste Instagram reel URL here...">
+                    <button id="download-reel-btn"><i class="fas fa-film"></i> Download Reel</button>
+                </div>
+                <div class="error-message" id="reel-error"></div>
+                <div class="spinner" id="reel-spinner"></div>
+                <div class="result-section" id="reel-result"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
